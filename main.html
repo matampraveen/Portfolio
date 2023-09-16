@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTS-8">
+        <title>Portfilio</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                <img alt="Its Me"  class="logo">
+                <ul>
+                      <li><a href="#">Home </a> </li>
+                      <li><a href="#">About </a> </li>
+                      <li><a href="#">Services </a> </li>
+                      <li><a href="#">Portfilio </a> </li>
+                      <li><a href="#">Contact </a> </li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Front-End Designer</p>
+                <h1>Hi, I'm Praveen</h1>              
+            </div>
+            </div>
+        </div>
+        <!-- --------------about--------- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="download.jpeg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 clas="sub-title">About Me</h1>
+                        <p>Students can write journal entries, fill out self-assessments, 
+                            or fill in learning logs to be included in their student portfolio.
+                             You may also want to include your own notes taken while working with or observing the student, 
+                             checklists of skills they've become adept at, and even videos that record student progress.</p>
+                   
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                                <p class="tab-links active-link" onclick="opentab('Projects')">Projects</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Front-End</span><br>Designing Web App Interfaces</li>
+                                    <li><span>Manual Testing</span><br>Code Testing and Implementation</li>
+                                    <li><span>Python</span><br>Basis of Pythin</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents " id="Education">
+                                <ul>
+                                    <li><span>Under Grauation</span><br>Malla Reddy Engineering college</li>
+                                    <li><span>Intermediate</span><br>Impulse Junior College</li>
+                                    <li><span>High School</span><br>Vivekanada Hogh School</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="Projects">
+                                <ul>
+                                    <li><span>Under Grauation</span><br>Malla Reddy Engineering college</li>
+                                    <li><span>Intermediate</span><br>Impulse Junior College</li>
+                                    <li><span>High School</span><br>Vivekanada Hogh School</li>
+                                </ul>
+                            </div>
+                       </div>
+                </div>  
+            </div>
+        </div>
+        <script>
+            var tablinks=document.getElementsByClassName("tab-links")
+            var tabContents=document.getElementsByClassName("tab-contents")
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabContents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link")
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+        </script>
+    </body>
+</html>
