@@ -18,7 +18,7 @@ body {
     height: 24px; /* Set the height of the image */
     object-fit: cover; /* Ensure the image maintains its aspect ratio */
     cursor: pointer; /* Make it look clickable if it is used as a button */
-    padding-left: 100px;
+    padding-left: 150px;
     padding-top: 0px;
 }
 
