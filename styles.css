@@ -13,13 +13,19 @@ body {
 
 }
 
-.dark_img {
-    width: 24px; /* Set the width of the image */
-    height: 24px; /* Set the height of the image */
-    object-fit: cover; /* Ensure the image maintains its aspect ratio */
-    cursor: pointer; /* Make it look clickable if it is used as a button */
-    padding-left: 150px;
-    padding-top: 0px;
+#dark-mode-toggle {
+    width: 24px; /* Icon size */
+    height: 24px; /* Icon size */
+    object-fit: cover; /* Maintain aspect ratio */
+    cursor: pointer; /* Make it look clickable */
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.8); /* White shadow directly around the image */
+    border-radius: 50%; /* Optional: Make the image round if desired */
+    margin: 0; /* Remove any default margins */
+    padding: 0; /* Remove any default padding */
+    background: none; /* Ensure no background color is applied */
+    border: none; 
+    margin-left: 180px;
+    margin-top: 0px;
 }
 
 .nav-links{
